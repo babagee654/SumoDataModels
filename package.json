@@ -15,5 +15,11 @@
     "repository": {
         "type": "git",
         "url": "https://github.com/babagee654/SumoDataModels"
+    },
+    "dependencies": {
+        "ts-node": "^10.9.2"
+    },
+    "devDependencies": {
+        "typescript": "^5.3.3"
     }
 }
