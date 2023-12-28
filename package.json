@@ -1,5 +1,5 @@
 {
-    "name": "sumo-data-models",
+    "name": "@babagee654/sumo-data-models",
     "version": "1.0.0",
     "description": "",
     "main": "index.ts",
