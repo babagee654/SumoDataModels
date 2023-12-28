@@ -11,9 +11,5 @@
     },
     "keywords": [],
     "author": "Jerome Acosta",
-    "license": "ISC",
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/babagee654/SumoDataModels"
-    }
+    "license": "ISC"
 }
