@@ -1,4 +1,3 @@
-//#region Classes
 export type BashoData = {
     bashoId?: number;
     bashoName?: string;
