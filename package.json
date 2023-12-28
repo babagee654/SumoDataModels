@@ -2,7 +2,10 @@
     "name": "sumo-data-models",
     "version": "1.0.0",
     "description": "",
-    "main": "index.js",
+    "main": "index.ts",
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com/@babagee654"
+    },
     "scripts": {
         "test": "echo \"Error: no test specified\" && exit 1"
     },
