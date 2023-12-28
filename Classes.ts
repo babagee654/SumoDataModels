@@ -1,6 +1,6 @@
-import { BashoData } from "../types/sumo-data-types";
-import { WrestlerData } from "../types/sumo-data-types";
-export class Basho implements BashoData {
+import { BashoData, WrestlerData } from "sumo-data-models";
+
+class Basho implements BashoData {
     bashoId?: number;
     bashoName?: string;
     venue?: string;
@@ -24,7 +24,7 @@ export class Basho implements BashoData {
     }
 }
 
-export class Wrestler implements WrestlerData {
+class Wrestler implements WrestlerData {
     wrestler_id?: number;
     name?: string;
     nationality?: string;
@@ -40,7 +40,8 @@ export class Wrestler implements WrestlerData {
     career_losses?: number;
     current_basho_record?: string;
 
-    constructor(data?: WrestlerData) {
+    constructor(json?: any) {
+        const data = json as WrestlerData;
         if (data) {
             Object.assign(this, data);
         }

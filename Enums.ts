@@ -1,4 +1,4 @@
-export enum Ranks {
+enum Ranks {
     Y = "Yokozuna",
     O = "Ozeki",
     S = "Sekiwake",
@@ -7,7 +7,7 @@ export enum Ranks {
     J = "Juryo",
 }
 
-export enum Status {
+enum Status {
     Upcoming = "Upcoming",
     Ongoing = "Ongoing",
     Completed = "Completed",

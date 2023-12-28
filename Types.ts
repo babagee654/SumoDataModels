@@ -1,4 +1,4 @@
-export type BashoData = {
+type BashoData = {
     bashoId?: number;
     bashoName?: string;
     venue?: string;
@@ -7,7 +7,7 @@ export type BashoData = {
     city?: string;
 };
 
-export type WrestlerData = {
+type WrestlerData = {
     wrestler_id?: number;
     name?: string;
     nationality?: string;
