@@ -2,24 +2,29 @@
     "name": "@babagee654/sumo-data-models",
     "version": "1.0.5",
     "description": "",
-    "main": "sumo-data-models.d.ts",
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@babagee654"
     },
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1"
+        "build": "rm -rf dist/ && npm run build:esm && npm run build:cjs",
+        "build:esm": "tsc",
+        "build:cjs": "tsc --module commonjs --outDir dist/cjs"
     },
     "keywords": [],
     "author": "Jerome Acosta",
     "license": "ISC",
     "repository": {
         "type": "git",
-        "url": "https://github.com/babagee654/SumoDataModels"
+        "url": "https://github.com/babagee654/sumo-data-models.git"
     },
     "dependencies": {
-        "ts-node": "^10.9.2"
-    },
-    "devDependencies": {
+        "ts-node": "^10.9.2",
+        "tsc": "^2.0.4",
         "typescript": "^5.3.3"
     }
 }

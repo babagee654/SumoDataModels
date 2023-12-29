@@ -70,5 +70,5 @@ export class Wrestler implements WrestlerData {
 
     constructor(json?: any);
 
-    public toString();
+    public toString(): string;
 }

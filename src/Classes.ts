@@ -1,5 +1,3 @@
-import { BashoData, WrestlerData } from "sumo-data-models";
-
 class Basho implements BashoData {
     bashoId?: number;
     bashoName?: string;
