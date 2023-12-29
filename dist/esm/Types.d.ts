@@ -6,7 +6,6 @@ export type BashoData = {
     endDate?: Date;
     city?: string;
 };
-
 export type WrestlerData = {
     wrestler_id?: number;
     name?: string;

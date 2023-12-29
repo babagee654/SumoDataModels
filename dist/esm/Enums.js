@@ -1,5 +1,4 @@
-"use strict";
-var Ranks;
+export var Ranks;
 (function (Ranks) {
     Ranks["Y"] = "Yokozuna";
     Ranks["O"] = "Ozeki";
@@ -8,9 +7,14 @@ var Ranks;
     Ranks["M"] = "Makuuchi";
     Ranks["J"] = "Juryo";
 })(Ranks || (Ranks = {}));
-var Status;
+export var Status;
 (function (Status) {
     Status["Upcoming"] = "Upcoming";
     Status["Ongoing"] = "Ongoing";
     Status["Completed"] = "Completed";
 })(Status || (Status = {}));
+export var Divisions;
+(function (Divisions) {
+    Divisions["Makuuchi"] = "Makuuchi";
+    Divisions["Juryo"] = "Juryo";
+})(Divisions || (Divisions = {}));

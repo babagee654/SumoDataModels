@@ -1,5 +1,4 @@
-"use strict";
-class Basho {
+export class Basho {
     constructor(json) {
         const data = json;
         if (data) {
@@ -14,7 +13,7 @@ class Basho {
         return `${this.bashoId}, ${this.bashoName}, ${this.venue}, ${this.startDate?.toDateString()}, ${this.endDate?.toDateString()}, ${this.city}\n`;
     }
 }
-class Wrestler {
+export class Wrestler {
     constructor(json) {
         const data = json;
         if (data) {

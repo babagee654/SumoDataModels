@@ -1,4 +1,5 @@
-class Basho implements BashoData {
+import { BashoData, WrestlerData } from "./Types";
+export class Basho implements BashoData {
     bashoId?: number;
     bashoName?: string;
     venue?: string;
@@ -22,7 +23,7 @@ class Basho implements BashoData {
     }
 }
 
-class Wrestler implements WrestlerData {
+export class Wrestler implements WrestlerData {
     wrestler_id?: number;
     name?: string;
     nationality?: string;

@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Divisions = exports.Status = exports.Ranks = void 0;
 var Ranks;
 (function (Ranks) {
     Ranks["Y"] = "Yokozuna";
@@ -7,10 +9,15 @@ var Ranks;
     Ranks["K"] = "Komusubi";
     Ranks["M"] = "Makuuchi";
     Ranks["J"] = "Juryo";
-})(Ranks || (Ranks = {}));
+})(Ranks || (exports.Ranks = Ranks = {}));
 var Status;
 (function (Status) {
     Status["Upcoming"] = "Upcoming";
     Status["Ongoing"] = "Ongoing";
     Status["Completed"] = "Completed";
-})(Status || (Status = {}));
+})(Status || (exports.Status = Status = {}));
+var Divisions;
+(function (Divisions) {
+    Divisions["Makuuchi"] = "Makuuchi";
+    Divisions["Juryo"] = "Juryo";
+})(Divisions || (exports.Divisions = Divisions = {}));

@@ -1,19 +1,17 @@
-export enum Ranks {
+export declare enum Ranks {
     Y = "Yokozuna",
     O = "Ozeki",
     S = "Sekiwake",
     K = "Komusubi",
     M = "Makuuchi",
-    J = "Juryo",
+    J = "Juryo"
 }
-
-export enum Status {
+export declare enum Status {
     Upcoming = "Upcoming",
     Ongoing = "Ongoing",
-    Completed = "Completed",
+    Completed = "Completed"
 }
-
-export enum Divisions {
+export declare enum Divisions {
     Makuuchi = "Makuuchi",
-    Juryo = "Juryo",
+    Juryo = "Juryo"
 }

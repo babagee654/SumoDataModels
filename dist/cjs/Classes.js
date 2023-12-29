@@ -1,4 +1,6 @@
 "use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+exports.Wrestler = exports.Basho = void 0;
 class Basho {
     constructor(json) {
         const data = json;
@@ -14,6 +16,7 @@ class Basho {
         return `${this.bashoId}, ${this.bashoName}, ${this.venue}, ${this.startDate?.toDateString()}, ${this.endDate?.toDateString()}, ${this.city}\n`;
     }
 }
+exports.Basho = Basho;
 class Wrestler {
     constructor(json) {
         const data = json;
@@ -25,3 +28,4 @@ class Wrestler {
         return `${this.wrestler_id}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
     }
 }
+exports.Wrestler = Wrestler;
