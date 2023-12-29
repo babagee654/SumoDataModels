@@ -1,8 +1,8 @@
 {
     "name": "@babagee654/sumo-data-models",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "",
-    "main": "index.ts",
+    "main": "sumo-data-models.d.ts",
     "publishConfig": {
         "registry": "https://npm.pkg.github.com/@babagee654"
     },
