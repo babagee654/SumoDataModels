@@ -21,6 +21,17 @@ export class Wrestler {
         }
     }
     toString() {
-        return `${this.wrestler_id}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+        return `${this.wrestlerId}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+    }
+}
+export class Matchup {
+    constructor(json) {
+        const data = json;
+        if (data) {
+            Object.assign(this, data);
+        }
+    }
+    toString() {
+        return `${this.wrestler1?.wrestlerId}, ${this.wrestler2?.wrestlerId}, ${this.matchupRecord}, ${this.basho?.bashoId}, ${this.matchupDay}, ${this.matchupDivision}, ${this.matchupStatus}${this.kimarite ? `, ${this?.winner?.name}, ${this.kimarite}` : ""}`;
     }
 }

@@ -9,7 +9,7 @@ export enum Ranks {
 
 export enum Status {
     Upcoming = "Upcoming",
-    Ongoing = "Ongoing",
+    Pending = "Pending",
     Completed = "Completed",
 }
 

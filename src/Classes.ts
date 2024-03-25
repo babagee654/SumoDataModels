@@ -1,4 +1,5 @@
-import { BashoData, WrestlerData } from "./Types";
+import { Divisions, Status } from "./Enums";
+import { BashoData, MatchupData, WrestlerData } from "./Types";
 export class Basho implements BashoData {
     bashoId?: number;
     bashoName?: string;
@@ -24,7 +25,7 @@ export class Basho implements BashoData {
 }
 
 export class Wrestler implements WrestlerData {
-    wrestler_id?: number;
+    wrestlerId?: number;
     name?: string;
     nationality?: string;
     height?: number;
@@ -47,6 +48,32 @@ export class Wrestler implements WrestlerData {
     }
 
     public toString(): string {
-        return `${this.wrestler_id}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+        return `${this.wrestlerId}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+    }
+}
+
+export class Matchup implements MatchupData {
+    wrestler1?: Wrestler;
+    wrestler2?: Wrestler;
+    winner?: Wrestler;
+    loser?: Wrestler;
+    matchupDay?: number;
+    matchupDivision?: string;
+    matchupStatus?: string;
+    matchupRecord?: string;
+    basho?: Basho;
+    kimarite?: string;
+
+    constructor(json?: any) {
+        const data = json as MatchupData;
+        if (data) {
+            Object.assign(this, data);
+        }
+    }
+
+    public toString(): string {
+        return `${this.wrestler1?.wrestlerId}, ${this.wrestler2?.wrestlerId}, ${this.matchupRecord}, ${this.basho?.bashoId}, ${this.matchupDay}, ${this.matchupDivision}, ${this.matchupStatus}${
+            this.kimarite ? `, ${this?.winner?.name}, ${this.kimarite}` : ""
+        }`;
     }
 }

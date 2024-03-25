@@ -13,7 +13,7 @@ var Ranks;
 var Status;
 (function (Status) {
     Status["Upcoming"] = "Upcoming";
-    Status["Ongoing"] = "Ongoing";
+    Status["Pending"] = "Pending";
     Status["Completed"] = "Completed";
 })(Status || (exports.Status = Status = {}));
 var Divisions;

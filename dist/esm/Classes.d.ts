@@ -1,4 +1,4 @@
-import { BashoData, WrestlerData } from "./Types";
+import { BashoData, MatchupData, WrestlerData } from "./Types";
 export declare class Basho implements BashoData {
     bashoId?: number;
     bashoName?: string;
@@ -10,7 +10,7 @@ export declare class Basho implements BashoData {
     toString(): string;
 }
 export declare class Wrestler implements WrestlerData {
-    wrestler_id?: number;
+    wrestlerId?: number;
     name?: string;
     nationality?: string;
     height?: number;
@@ -24,6 +24,20 @@ export declare class Wrestler implements WrestlerData {
     career_wins?: number;
     career_losses?: number;
     current_basho_record?: string;
+    constructor(json?: any);
+    toString(): string;
+}
+export declare class Matchup implements MatchupData {
+    wrestler1?: Wrestler;
+    wrestler2?: Wrestler;
+    winner?: Wrestler;
+    loser?: Wrestler;
+    matchupDay?: number;
+    matchupDivision?: string;
+    matchupStatus?: string;
+    matchupRecord?: string;
+    basho?: Basho;
+    kimarite?: string;
     constructor(json?: any);
     toString(): string;
 }

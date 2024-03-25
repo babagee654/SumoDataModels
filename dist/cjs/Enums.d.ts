@@ -8,7 +8,7 @@ export declare enum Ranks {
 }
 export declare enum Status {
     Upcoming = "Upcoming",
-    Ongoing = "Ongoing",
+    Pending = "Pending",
     Completed = "Completed"
 }
 export declare enum Divisions {
