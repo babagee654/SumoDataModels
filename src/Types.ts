@@ -17,13 +17,13 @@ export type WrestlerData = {
     weight?: number;
     heya?: string;
     age?: number;
-    highest_rank?: string;
-    current_rank?: string;
-    current_division?: string;
+    highestRank?: string;
+    currentRank?: string;
+    currentDivision?: string;
     debut?: Date;
-    career_wins?: number;
-    career_losses?: number;
-    current_basho_record?: string;
+    careerWins?: number;
+    careerLosses?: number;
+    currentBashoRecord?: string;
 };
 
 export type MatchupData = {

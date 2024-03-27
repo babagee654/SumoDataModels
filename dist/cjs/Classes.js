@@ -25,7 +25,7 @@ class Wrestler {
         }
     }
     toString() {
-        return `${this.wrestlerId}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+        return `${this.wrestlerId}, ${this.name}, ${this.currentRank}, ${this.currentBashoRecord}`;
     }
 }
 exports.Wrestler = Wrestler;

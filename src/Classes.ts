@@ -1,4 +1,3 @@
-import { Divisions, Status } from "./Enums";
 import { BashoData, MatchupData, WrestlerData } from "./Types";
 export class Basho implements BashoData {
     bashoId?: number;
@@ -32,13 +31,13 @@ export class Wrestler implements WrestlerData {
     weight?: number;
     heya?: string;
     age?: number;
-    highest_rank?: string;
-    current_rank?: string;
-    current_division?: string;
+    highestRank?: string;
+    currentRank?: string;
+    currentDivision?: string;
     debut?: Date;
-    career_wins?: number;
-    career_losses?: number;
-    current_basho_record?: string;
+    careerWins?: number;
+    careerLosses?: number;
+    currentBashoRecord?: string;
 
     constructor(json?: any) {
         const data = json as WrestlerData;
@@ -48,21 +47,22 @@ export class Wrestler implements WrestlerData {
     }
 
     public toString(): string {
-        return `${this.wrestlerId}, ${this.name}, ${this.current_rank}, ${this.current_basho_record}`;
+        return `${this.wrestlerId}, ${this.name}, ${this.currentRank}, ${this.currentBashoRecord}`;
     }
 }
 
 export class Matchup implements MatchupData {
+    matchupId?: number;
+    basho?: Basho;
     wrestler1?: Wrestler;
     wrestler2?: Wrestler;
+    matchupDay?: number;
+    matchupRecord?: string;
+    matchupStatus?: string;
+    matchupDivision?: string;
+    kimarite?: string;
     winner?: Wrestler;
     loser?: Wrestler;
-    matchupDay?: number;
-    matchupDivision?: string;
-    matchupStatus?: string;
-    matchupRecord?: string;
-    basho?: Basho;
-    kimarite?: string;
 
     constructor(json?: any) {
         const data = json as MatchupData;
